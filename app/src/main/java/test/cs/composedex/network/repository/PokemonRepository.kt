@@ -4,8 +4,6 @@ import dagger.hilt.android.scopes.ActivityScoped
 import retrofit2.http.GET
 import retrofit2.http.Path
 import retrofit2.http.Query
-import test.cs.composedex.network.responses.pokemon.Pokemon
-import test.cs.composedex.network.responses.pokemonList.PokemonList
 import test.cs.composedex.utils.Resource
 import javax.inject.Inject
 

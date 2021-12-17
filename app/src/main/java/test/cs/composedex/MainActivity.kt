@@ -11,6 +11,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import dagger.hilt.android.AndroidEntryPoint
+import test.cs.composedex.ui.presentation.pokemonlist.PokeListScreen
 import test.cs.composedex.ui.theme.ComposeDexTheme
 
 @AndroidEntryPoint
@@ -18,14 +19,14 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            ComposeDexTheme {
+            ComposeDexTheme(true) {
                 val navController = rememberNavController()
                 NavHost(
                     navController = navController,
                     startDestination = "dex_list_screen"
                 ) {
                     composable("dex_list_screen") {
-
+                        PokeListScreen(navController = navController)
                     }
                     composable(
                         "dex_detail_screen/{dominantColor}/{pokeName}",
