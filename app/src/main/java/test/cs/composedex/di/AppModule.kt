@@ -6,7 +6,7 @@ import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import test.cs.composedex.network.repository.PokeApi
+import test.cs.composedex.network.PokeApi
 import test.cs.composedex.network.repository.PokemonRepository
 import test.cs.composedex.utils.Constants.BASE_URL
 import javax.inject.Singleton
